@@ -983,3 +983,7 @@ A arquitetura pode ser considerada pronta para implementação quando:
 - [Documentação funcional corporativa](docs/product/functional-documentation.md)
 - [Arquitetura técnica do sistema](docs/architecture/technical-architecture.md)
 - [Projeto de banco de dados enterprise](docs/architecture/database-design.md)
+
+## Documentação complementar
+
+- [Projeto da API REST Enterprise](docs/api-rest-enterprise.md): endpoints, DTOs, validações, paginação, filtros, autenticação, OAuth2/JWT, OpenAPI/Swagger, erros, rate limit, idempotência, auditoria e logs.
