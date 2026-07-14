@@ -10,6 +10,7 @@ A plataforma deve executar milhares de varreduras diárias com isolamento, rastr
 
 - Orquestrar testes automatizados de segurança Web e API.
 - Expor capacidades via MCP Server, API HTTP e CLI.
+- Projetar o MCP Server com tools, resources, prompts, capabilities, handlers, contexto, lifecycle e extensibilidade para scanners.
 - Permitir plugins para scanners, validadores, parsers, correlacionadores e reporters.
 - Suportar execuções assíncronas e distribuídas em larga escala.
 - Padronizar evidências, achados, severidade, recomendações e rastreabilidade.
@@ -983,7 +984,5 @@ A arquitetura pode ser considerada pronta para implementação quando:
 - [Documentação funcional corporativa](docs/product/functional-documentation.md)
 - [Arquitetura técnica do sistema](docs/architecture/technical-architecture.md)
 - [Projeto de banco de dados enterprise](docs/architecture/database-design.md)
-
-## Documentação complementar
-
 - [Projeto da API REST Enterprise](docs/api-rest-enterprise.md): endpoints, DTOs, validações, paginação, filtros, autenticação, OAuth2/JWT, OpenAPI/Swagger, erros, rate limit, idempotência, auditoria e logs.
+- [Projeto do MCP Server](docs/architecture/mcp-server-design.md): tools, resources, prompts, capabilities, handlers, contexto, lifecycle, registro automático, validação, erros e estratégia para novos scanners.
