@@ -244,6 +244,8 @@ security-qa-mcp/
 
 A modelagem técnica completa do sistema, incluindo estrutura de pastas, packages, camadas, interfaces, entidades, DTOs, casos de uso, serviços, repositórios, adaptadores, gateways, configurações, eventos, exceptions, middlewares, builders, factories, validators, helpers e utilitários, está documentada em [`docs/architecture/technical-architecture.md`](docs/architecture/technical-architecture.md).
 
+O design específico do Scanner Engine, incluindo plugins para ZAP, Nuclei, Nikto, Trivy, Dependency Check, Semgrep, CodeQL, Grype, Snyk, Gitleaks, TruffleHog e Nmap, está documentado em [`docs/architecture/scanner-engine-design.md`](docs/architecture/scanner-engine-design.md).
+
 ---
 
 ## 7. Componentes do domínio
