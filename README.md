@@ -238,7 +238,13 @@ security-qa-mcp/
 
 ---
 
-## 6. Componentes do domínio
+## 6. Arquitetura técnica detalhada
+
+A modelagem técnica completa do sistema, incluindo estrutura de pastas, packages, camadas, interfaces, entidades, DTOs, casos de uso, serviços, repositórios, adaptadores, gateways, configurações, eventos, exceptions, middlewares, builders, factories, validators, helpers e utilitários, está documentada em [`docs/architecture/technical-architecture.md`](docs/architecture/technical-architecture.md).
+
+---
+
+## 7. Componentes do domínio
 
 ### Entidades principais
 
@@ -289,7 +295,7 @@ security-qa-mcp/
 
 ---
 
-## 7. Portas e adaptadores
+## 8. Portas e adaptadores
 
 ### Portas de entrada
 
@@ -331,7 +337,7 @@ security-qa-mcp/
 
 ---
 
-## 8. Fluxo de comunicação
+## 9. Fluxo de comunicação
 
 ### Fluxo síncrono de criação
 
@@ -377,7 +383,7 @@ Client
 
 ---
 
-## 9. Diagrama textual completo
+## 10. Diagrama textual completo
 
 ```text
 [User / CI / AI Agent]
@@ -428,7 +434,7 @@ Client
 
 ---
 
-## 10. Fluxo completo de execução
+## 11. Fluxo completo de execução
 
 1. **Recebimento da solicitação**
    - Usuário, agente MCP, pipeline ou CLI solicita um scan.
@@ -489,7 +495,7 @@ Client
 
 ---
 
-## 11. Modelo MCP
+## 12. Modelo MCP
 
 O MCP Server deve expor capacidades como ferramentas e recursos.
 
@@ -526,7 +532,7 @@ O MCP Server deve expor capacidades como ferramentas e recursos.
 
 ---
 
-## 12. Estratégia de plugins
+## 13. Estratégia de plugins
 
 ### Contrato de plugin
 
@@ -560,7 +566,7 @@ Cada plugin deve declarar:
 
 ---
 
-## 13. Tecnologias sugeridas
+## 14. Tecnologias sugeridas
 
 ### Opção recomendada
 
@@ -592,7 +598,7 @@ Cada plugin deve declarar:
 
 ---
 
-## 14. Trade-offs da arquitetura
+## 15. Trade-offs da arquitetura
 
 | Decisão | Benefício | Custo/risco |
 |---|---|---|
@@ -607,7 +613,7 @@ Cada plugin deve declarar:
 
 ---
 
-## 15. Escalabilidade
+## 16. Escalabilidade
 
 ### Estratégias
 
@@ -644,7 +650,7 @@ Para milhares de execuções diárias:
 
 ---
 
-## 16. Segurança
+## 17. Segurança
 
 ### Controles fundamentais
 
@@ -678,7 +684,7 @@ Para milhares de execuções diárias:
 
 ---
 
-## 17. Observabilidade
+## 18. Observabilidade
 
 ### Métricas
 
@@ -717,7 +723,7 @@ Para milhares de execuções diárias:
 
 ---
 
-## 18. Estratégia de deploy
+## 19. Estratégia de deploy
 
 ### Ambientes
 
@@ -749,7 +755,7 @@ Para milhares de execuções diárias:
 
 ---
 
-## 19. Execução local e Docker
+## 20. Execução local e Docker
 
 ### Execução local mínima
 
@@ -795,7 +801,7 @@ Serviços:
 
 ---
 
-## 20. Estratégia de CI/CD
+## 21. Estratégia de CI/CD
 
 ### Pipeline de pull request
 
@@ -835,7 +841,7 @@ Serviços:
 
 ---
 
-## 21. Estratégia de dados
+## 22. Estratégia de dados
 
 ### PostgreSQL
 
@@ -875,7 +881,7 @@ s3://securityqa-evidence/{tenant_id}/{project_id}/{scan_id}/reports/
 
 ---
 
-## 22. Estratégia de qualidade
+## 23. Estratégia de qualidade
 
 ### Tipos de teste
 
@@ -900,7 +906,7 @@ s3://securityqa-evidence/{tenant_id}/{project_id}/{scan_id}/reports/
 
 ---
 
-## 23. Roadmap arquitetural sugerido
+## 24. Roadmap arquitetural sugerido
 
 ### Fase 1 — MVP operacional
 
@@ -941,7 +947,7 @@ s3://securityqa-evidence/{tenant_id}/{project_id}/{scan_id}/reports/
 
 ---
 
-## 24. Decisões arquiteturais iniciais recomendadas
+## 25. Decisões arquiteturais iniciais recomendadas
 
 1. Adotar monorepo para reduzir fricção inicial entre core, apps, SDK e plugins.
 2. Manter domínio e contratos independentes de frameworks.
@@ -956,7 +962,7 @@ s3://securityqa-evidence/{tenant_id}/{project_id}/{scan_id}/reports/
 
 ---
 
-## 25. Definition of Done arquitetural
+## 26. Definition of Done arquitetural
 
 A arquitetura pode ser considerada pronta para implementação quando:
 
