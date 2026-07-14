@@ -13,6 +13,7 @@ A plataforma deve executar milhares de varreduras diárias com isolamento, rastr
 - Permitir plugins para scanners, validadores, parsers, correlacionadores e reporters.
 - Suportar execuções assíncronas e distribuídas em larga escala.
 - Padronizar evidências, achados, severidade, recomendações e rastreabilidade.
+- Projetar o modelo de dados enterprise com multi tenant, auditoria, histórico, versionamento e soft delete.
 - Integrar com CI/CD, repositórios, issue trackers, SIEM, observabilidade e sistemas de governança.
 - Separar domínio, aplicação, infraestrutura e interfaces segundo Clean Architecture e Hexagonal Architecture.
 
@@ -976,3 +977,9 @@ A arquitetura pode ser considerada pronta para implementação quando:
 - O deploy local em Docker estiver especificado.
 - O pipeline CI/CD tiver gates de qualidade e segurança.
 - As decisões principais estiverem registradas como ADRs.
+
+### Documentos complementares
+
+- [Documentação funcional corporativa](docs/product/functional-documentation.md)
+- [Arquitetura técnica do sistema](docs/architecture/technical-architecture.md)
+- [Projeto de banco de dados enterprise](docs/architecture/database-design.md)
