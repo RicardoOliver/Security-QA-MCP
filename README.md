@@ -1,5 +1,49 @@
 # Security QA MCP — Blueprint de Arquitetura Enterprise
 
+## Visão rápida
+
+Este repositório entrega uma base funcional de um platform para Security QA MCP com:
+
+- API REST em FastAPI com autenticação simples e ciclo de vida de scans.
+- Dashboard React para visualização de scans e findings.
+- Estrutura pronta para evolução para integração com scanners reais, CI/CD e governança.
+
+## Como executar localmente
+
+### Backend
+
+```bash
+cd backend
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+### Testes
+
+```bash
+cd backend
+pytest
+```
+
+### Endpoints principais
+
+- GET /health
+- POST /api/v1/auth/login
+- GET /api/v1/auth/me
+- GET /api/v1/scans
+- POST /api/v1/scans/{scan_id}/run
+- GET /docs
+
 ## 1. Visão de alto nível
 
 O **Security QA MCP** é uma plataforma enterprise para automatizar testes de segurança em aplicações Web e APIs usando o **Model Context Protocol (MCP)** como camada padronizada de exposição de ferramentas, contexto e resultados para clientes compatíveis com MCP, agentes de IA, pipelines de CI/CD e interfaces operacionais.
