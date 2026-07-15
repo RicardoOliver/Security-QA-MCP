@@ -1032,3 +1032,9 @@ A arquitetura pode ser considerada pronta para implementação quando:
 - [Projeto de banco de dados enterprise](docs/architecture/database-design.md)
 - [Projeto da API REST Enterprise](docs/api-rest-enterprise.md): endpoints, DTOs, validações, paginação, filtros, autenticação, OAuth2/JWT, OpenAPI/Swagger, erros, rate limit, idempotência, auditoria e logs.
 - [Projeto do MCP Server](docs/architecture/mcp-server-design.md): tools, resources, prompts, capabilities, handlers, contexto, lifecycle, registro automático, validação, erros e estratégia para novos scanners.
+
+<br/>
+
+![Visualizações](https://views-counter.vercel.app/badge?pageId=RicardoOliver/Security-QA-MCP)
+
+<br/>
